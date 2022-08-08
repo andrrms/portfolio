@@ -1,0 +1,20 @@
+:root {
+  /* FIXED COLORS */
+  --color-red-500: #d62828;
+  --color-red-300: #9d0208;
+  --color-red-200: #6a040f;
+  --color-orange-500: #f77f00;
+  --color-yellow-700: #fcbf49;
+  --color-blue-50: #03071e;
+  --color-blue-55-transparent: #040a2b99;
+  --color-blue-60: #050c36;
+  --color-beige-200: #eae2b7;
+
+  /* DYNAMIC COLORS */
+  --landing-bg: var(--color-blue-50);
+  --landing-text-on-bg: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
