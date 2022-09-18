@@ -3,7 +3,7 @@ import ContentContainer from "../../styles/ContentContainer";
 
 export const PolaroidStripesContainer = styled.div`
   position: relative;
-  margin-top: calc(42px * 2);
+  margin-top: calc(42px * 3);
 
   display: flex;
   flex-direction: column;

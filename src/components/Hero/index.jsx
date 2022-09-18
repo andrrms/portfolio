@@ -4,6 +4,7 @@ import Navbar from "../Navbar";
 
 import PolaroidStripes from "../PolaroidStripes";
 import SpreadText from "../SpreadText";
+import ThemeLinkButton from "../ThemeLinkButton";
 
 import {
   HeroContainer,
@@ -11,7 +12,6 @@ import {
   SubtitleContainer,
   TextGroup,
   ButtonGroup,
-  TestButton,
 } from "./styles";
 
 export default function Hero() {
@@ -26,10 +26,10 @@ export default function Hero() {
         <SpreadText text="Silveira" reversedAnimation />
       </TextGroup>
       <ButtonGroup>
-        <TestButton primary href="#contact">
+        <ThemeLinkButton primary href="#contact">
           Quero Contratar
-        </TestButton>
-        <TestButton href="#about">Saiba mais</TestButton>
+        </ThemeLinkButton>
+        <ThemeLinkButton href="#about">Saiba mais</ThemeLinkButton>
       </ButtonGroup>
       <PolaroidStripes />
     </HeroContainer>

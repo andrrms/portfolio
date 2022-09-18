@@ -25,7 +25,7 @@ export const SubtitleContainer = styled(ContentContainer)`
   margin-top: 60px;
 
   @media (min-width: 1024px) {
-    margin-top: 75px;
+    margin-top: auto;
   }
 `;
 
@@ -65,37 +65,6 @@ export const HeroContainer = styled.header`
   }
 `;
 
-export const TestButton = styled.a`
-  border-radius: 100px;
-
-  font-family: "IBM Plex Mono";
-  font-weight: 600;
-  font-size: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  padding: 8px 10px;
-
-  border: none;
-  ${({ primary }) =>
-    primary
-      ? css`
-          background-color: var(--color-yellow-700);
-          color: #000;
-        `
-      : css`
-          background-color: transparent;
-          border: 2px solid var(--color-orange-500);
-          color: var(--color-orange-500);
-        `}
-
-  @media (min-width: 1024px) {
-    padding: 10px 30px;
-
-    font-size: 20px;
-  }
-`;
-
 export const ButtonGroup = styled(ContentContainer)`
   display: flex;
   justify-content: center;
@@ -108,7 +77,7 @@ export const ButtonGroup = styled(ContentContainer)`
   @media (min-width: 1024px) {
     order: 1;
 
-    margin-top: auto;
+    margin-top: 5vh;
     margin-bottom: 0;
 
     justify-content: flex-end;
