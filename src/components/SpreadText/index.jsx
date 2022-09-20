@@ -36,18 +36,17 @@ export default function SpreadText({ text, reversedAnimation }) {
       }
 
       setFinalText(iFinalText);
-      console.log(computedTextSize, screenWidth, iFinalText);
     }
 
     let timer;
-    function debounce(func, timeout = 300) {
+    /* function debounce(func, timeout = 300) {
       return (...args) => {
         clearTimeout(timer);
         timer = setTimeout(() => {
           func.apply(this, args);
         }, timeout);
       };
-    }
+    } */
 
     computeStringSize();
 

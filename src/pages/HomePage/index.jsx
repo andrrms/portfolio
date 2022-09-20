@@ -15,40 +15,6 @@ export default function HomePage() {
         <ContentContainer>
           <article>
             <TextGroup>
-              <AnchorTitle anchor="about">Sobre mim</AnchorTitle>
-              <p>
-                Oi, meu nome é André Silveira, tudo bem? Minha jornada na
-                programação se iniciou de maneira muito curiosa, criando scripts
-                VBA para Excel. Já na época eu era motivado pela criação de
-                interfaces. Depois disso eu conheci o Scratch, uma plataforma de
-                programação e lógica para crianças, onde passei muitos anos da
-                minha vida fazendo joguinhos e criando amigos. Futuramente, tive
-                contato com PHP criando CMS’es personalizadas para jogos como
-                Habbo Hotel e Transformice. Por fim, mais interessado em
-                programação de fato, tive meu primeiro contato com JavaScript
-                através do NodeJS, criando pequenos bots para a plataforma do
-                Telegram.
-              </p>
-              <p>
-                Sempre estive desorientado sobre o que aprender, até que conheci
-                o curso da Kenzie, o qual foi capaz de me fornecer uma trilha de
-                aprendizado sólida para finalmente dar o pontapé no mundo da
-                programação como profissão, e não apenas um hobbie.
-              </p>
-              <p>
-                Em julho de 2022, concluí a primeira metade do curso, a qual me
-                deu total capacidade de entender e trabalhar com o front-end, o
-                que sempre casou com meu apelo estético e me deu a minha maior
-                motivação:{" "}
-                <strong>
-                  desenvolver sites que inspirem pessoas assim como eu, quando
-                  ainda criança, fui inspirado.
-                </strong>{" "}
-                Atualmente estou à procura de uma primeira colocação no mercado
-                de trabalho.
-              </p>
-            </TextGroup>
-            <TextGroup>
               <AnchorTitle anchor="skills">Minhas hard-skills</AnchorTitle>
               <p>Algumas hard-skills por aqui</p>
               <h2>Minhas soft-skills</h2>
@@ -61,6 +27,28 @@ export default function HomePage() {
                 <li>Algum outro projeto</li>
                 <li>Projeto super legal</li>
               </ul>
+            </TextGroup>
+            <TextGroup>
+              <AnchorTitle anchor="about">Sobre mim</AnchorTitle>
+              <p>
+                Desde muito jovem, me interessei por programação e interfaces, e
+                tive meu primeiro contato com a linguagem VBA para Excel. Mais
+                tarde, aprendi a usar a plataforma Scratch para criar joguinhos
+                e amigos virtuais. Eventualmente, me interessei por programação
+                de fato, e tive meu primeiro contato através do PHP, criando CMS
+                customizadas para habbos piratas em PHP. Mais tarde, conheci o
+                JavaScript através do NodeJS, criando pequenos bots para
+                Telegram.
+              </p>
+              <p>
+                Atualmente estou cursando o programa de desenvolvimento web
+                full-stack da Kenzie, o qual me deu total capacidade de
+                trabalhar com o front-end (e futuramente com back-end também), o
+                que sempre casou com meu apelo estético. Estou à procura da
+                minha primeira colocação no mercado de trabalho, e espero poder
+                desenvolver sites que inspirem outras pessoas assim como fui
+                inspirado quando criança.
+              </p>
             </TextGroup>
           </article>
         </ContentContainer>

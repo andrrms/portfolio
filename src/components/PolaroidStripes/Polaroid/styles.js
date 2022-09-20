@@ -13,8 +13,8 @@ export const PolaroidContainer = styled.div`
   box-shadow: 1px 4px 13px 1px rgba(0, 0, 0, 0.25);
 
   @media (min-width: 1024px) {
-    width: 300px;
-    height: 370px;
+    width: 350px;
+    height: 420px;
   }
 
   transition: 0.2s;

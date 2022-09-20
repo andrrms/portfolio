@@ -1,5 +1,6 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
+import HeroPattern from "../../assets/hero_pattern.webp";
 import ContentContainer from "../../styles/ContentContainer";
 import { PolaroidStripesContainer } from "../PolaroidStripes/styles";
 
@@ -25,7 +26,7 @@ export const SubtitleContainer = styled(ContentContainer)`
   margin-top: 60px;
 
   @media (min-width: 1024px) {
-    margin-top: auto;
+    margin-top: 20vh;
   }
 `;
 

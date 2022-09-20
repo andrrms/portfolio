@@ -13,7 +13,7 @@ import {
   StripesTitle,
 } from "./styles";
 
-import ProfilePicture from "../../assets/profile.jpg";
+import ProfilePicture from "../../assets/profile.jpeg";
 import MemojiSticker from "../../assets/memoji_sticker.png";
 
 export default function PolaroidStripes() {

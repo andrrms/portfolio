@@ -6,6 +6,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-icons": "^4.4.0",
+    "react-intersection-observer": "^9.4.0",
     "react-is": ">= 16.8.0",
     "react-router-dom": "^6.3.0",
     "styled-components": "^5.3.5"
@@ -17,6 +18,8 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-plugin-react": "^7.31.8",
     "react-scripts": "latest"
   },
   "browserslist": {

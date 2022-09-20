@@ -9,7 +9,7 @@ import {
   SmoothAnchor,
 } from "./styles";
 
-export default function Navbar() {
+export default function Navbar({ primary }) {
   const [isSmallVP, setIsSmallVP] = useState(0);
 
   useEffect(() => {
@@ -21,11 +21,11 @@ export default function Navbar() {
 
     window.addEventListener("resize", determineViewport);
 
-    return () => window.addEventListener("resize", determineViewport);
+    return () => window.removeEventListener("resize", determineViewport);
   });
 
   return (
-    <NavbarContainer>
+    <NavbarContainer primary={primary}>
       <NavbarContent>
         {isSmallVP ? (
           <>
@@ -36,13 +36,13 @@ export default function Navbar() {
         ) : (
           <LinksList>
             <li>
-              <SmoothAnchor href="#about">Sobre mim</SmoothAnchor>
-            </li>
-            <li>
               <SmoothAnchor href="#skills">Minhas skills</SmoothAnchor>
             </li>
             <li>
               <SmoothAnchor href="#projects">Meus projetos</SmoothAnchor>
+            </li>
+            <li>
+              <SmoothAnchor href="#about">Sobre mim</SmoothAnchor>
             </li>
             <li>
               <SmoothAnchor href="#contact">Contato</SmoothAnchor>

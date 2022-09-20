@@ -13,8 +13,11 @@ export const NavbarContainer = styled.nav`
   z-index: 5000;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: var(--color-blue-55-transparent);
+  background-color: ${({ primary }) =>
+    primary ? "var(--color-blue-55-transparent)" : "rgba(0, 0, 0, 0.75)"};
   backdrop-filter: blur(20px);
+
+  transition: 0.1s ease background-color;
 `;
 
 export const NavbarContent = styled(ContentContainer)`
