@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HomePageContainer = styled.div`
   background-color: var(--landing-bg);
+
   color: var(--landing-text-on-bg);
 
   width: 100%;
@@ -17,13 +18,30 @@ export const ContentArea = styled.main`
 
   font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 400;
 
-  p {
-    line-height: 22px;
+  .horizontalContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
-    margin-top: 14px;
+    @media screen and (min-width: 1280px) {
+      display: grid;
+      grid-template-columns: 60% 1fr;
+      column-gap: 10px;
+    }
+
+    .photoArea {
+      width: 100%;
+    }
+  }
+
+  p {
+    line-height: 28px;
+    text-align: justify;
+
+    margin-top: 30px;
 
     &:first-of-type {
       margin-top: 0;
@@ -60,6 +78,10 @@ export const TextGroup = styled.div`
   }
 
   @media screen and (min-width: 1440px) {
-    width: 60%;
+    ///width: 60%;
+  }
+
+  p {
+    margin-bottom: 10px;
   }
 `;

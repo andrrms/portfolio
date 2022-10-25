@@ -29,7 +29,10 @@ export default function Navbar({ primary }) {
       <NavbarContent>
         {isSmallVP ? (
           <>
-            <NavButton onClick={() => alert("Clicado")}>
+            <NavButton
+              onClick={() => alert("Clicado")}
+              aria-label="Menu lateral"
+            >
               <FiMenu />
             </NavButton>
           </>

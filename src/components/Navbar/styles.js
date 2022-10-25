@@ -69,4 +69,10 @@ export const SmoothAnchor = styled.a`
       width: 100%;
     }
   }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 1pt orange;
+    border-radius: 3px;
+  }
 `;

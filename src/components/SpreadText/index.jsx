@@ -3,7 +3,6 @@ import React, { useState, useRef, useEffect, useLayoutEffect } from "react";
 import {
   SpreadTextContainer,
   GhostText,
-  GhostText2,
   ActualText,
   TextContainer,
   ScrollingMarquee,
@@ -60,9 +59,9 @@ export default function SpreadText({ text, reversedAnimation }) {
         <GhostText reversed={!!reversedAnimation} aria-hidden={true}>
           {finalText}
         </GhostText>
-        <GhostText2 reversed={!!reversedAnimation} aria-hidden={true}>
+        <GhostText reversed={!!reversedAnimation} aria-hidden={true}>
           {finalText}
-        </GhostText2>
+        </GhostText>
       </ScrollingMarquee>
       <TextContainer>
         <ActualText>{text}</ActualText>

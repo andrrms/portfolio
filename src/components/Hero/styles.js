@@ -1,12 +1,20 @@
 import styled from "styled-components";
 
-import HeroPattern from "../../assets/hero_pattern.webp";
 import ContentContainer from "../../styles/ContentContainer";
 import { PolaroidStripesContainer } from "../PolaroidStripes/styles";
 
 export const TextGroup = styled.div`
   margin: 20px 0;
   margin-bottom: 30px;
+`;
+
+export const HeroBackground = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
 `;
 
 export const Subtitle = styled.h3`
@@ -25,9 +33,9 @@ export const Subtitle = styled.h3`
 export const SubtitleContainer = styled(ContentContainer)`
   margin-top: 60px;
 
-  @media (min-width: 1024px) {
+  /* @media (min-width: 1024px) {
     margin-top: 20vh;
-  }
+  } */
 `;
 
 export const HeroContainer = styled.header`
@@ -35,6 +43,7 @@ export const HeroContainer = styled.header`
 
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: 1024px) {
     height: 100vh;

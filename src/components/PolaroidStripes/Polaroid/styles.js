@@ -1,10 +1,14 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const PolaroidContainer = styled.div`
-  width: 250px;
-  height: 320px;
+  width: var(--polaroid-width);
+  height: var(--polaroid-height);
 
-  transform: rotate(4deg);
+  ${({ noTransform }) =>
+    !noTransform &&
+    css`
+      transform: rotate(4deg);
+    `}
 
   background-color: #fff;
 
@@ -13,26 +17,41 @@ export const PolaroidContainer = styled.div`
   box-shadow: 1px 4px 13px 1px rgba(0, 0, 0, 0.25);
 
   @media (min-width: 1024px) {
-    width: 350px;
-    height: 420px;
+    width: var(--polaroid-width-L);
+    height: var(--polaroid-height-L);
   }
 
   transition: 0.2s;
 
-  @media screen {
-    &:hover {
-      box-shadow: 0px 7px 17px 1px rgba(0, 0, 0, 0.5);
+  ${({ noTransform }) =>
+    !noTransform &&
+    css`
+      @media screen {
+        &:hover,
+        &:focus-within {
+          box-shadow: 0px 7px 17px 1px rgba(0, 0, 0, 0.5);
 
-      transform: rotate(0deg) scale(110%);
-    }
-  }
+          transform: rotate(0deg) scale(110%);
+        }
+      }
+
+      @media screen and (prefers-reduced-motion) {
+        transition: none;
+
+        &:hover,
+        &:focus-within {
+          box-shadow: 1px 4px 13px 1px rgba(0, 0, 0, 0.25);
+          transform: rotate(4deg) scale(100%);
+        }
+      }
+    `}
 `;
 
 export const PolaroidPhotoContainer = styled.figure`
+  width: 100%;
+
   display: flex;
   flex-direction: column;
-
-  height: 100%;
 
   img {
     width: 100%;
@@ -44,14 +63,14 @@ export const PolaroidCaption = styled.figcaption`
 
   font-family: "Nothing You Could Do";
   font-size: 28px;
-  text-align: right;
+  text-align: ${({ fullArea }) => (fullArea ? "center" : "right")};
 
-  width: 95%;
+  width: ${({ fullArea }) => (fullArea ? "100%" : "95%")};
   height: 100%;
   margin: 0 auto;
 
   display: flex;
-  justify-content: flex-end;
+  justify-content: ${({ fullArea }) => (fullArea ? "center" : "flex-end")};
   align-items: center;
 
   padding-top: 10px;

@@ -1,12 +1,17 @@
-import React from 'react';
+import React from "react";
+import Modal from "./components/Modal";
 
-import Routes from './routes';
-import './styles/global.css';
+import ContextProviders from "./contexts";
+import Routes from "./routes";
+import "./styles/global.css";
 
 export default function App() {
   return (
     <>
-      <Routes />
+      <ContextProviders>
+        <Modal />
+        <Routes />
+      </ContextProviders>
     </>
   );
 }

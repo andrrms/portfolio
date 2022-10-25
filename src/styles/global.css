@@ -13,6 +13,16 @@
   /* DYNAMIC COLORS */
   --landing-bg: var(--color-blue-50);
   --landing-text-on-bg: white;
+
+  /* TODO: BAD USE OF REM, FIX IT LATER */
+  font-size: 20px;
+
+  /* POLAROID SIZES */
+  --polaroid-width: 250px;
+  --polaroid-height: 320px;
+
+  --polaroid-width-L: 350px;
+  --polaroid-height-L: 420px;
 }
 
 html {

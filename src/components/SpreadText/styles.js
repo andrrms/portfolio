@@ -29,7 +29,7 @@ const Marquee = keyframes`
 export const GhostText = styled.span`
   font-family: "IBM Plex Mono";
   font-size: ${FONT_SIZE}px;
-  text-transform: lowercase;
+  // text-transform: lowercase;
   text-align: right;
 
   -webkit-text-stroke-width: 1px;
@@ -57,10 +57,10 @@ export const GhostText = styled.span`
 
     animation-duration: 30s;
   }
-`;
 
-export const GhostText2 = styled(GhostText)`
-  //animation-delay: 5s;
+  @media screen and (prefers-reduced-motion) {
+    animation: none;
+  }
 `;
 
 export const ScrollingMarquee = styled.div`
@@ -83,7 +83,7 @@ export const TextContainer = styled(ContentContainer)`
 export const ActualText = styled.h1`
   font-family: "IBM Plex Mono";
   font-size: ${FONT_SIZE}px;
-  text-transform: lowercase;
+  /// text-transform: lowercase;
   text-align: right;
 
   color: var(--landing-text-on-bg);

@@ -6,14 +6,14 @@ import Navbar from "../Navbar";
 
 import PolaroidStripes from "../PolaroidStripes";
 import SpreadText from "../SpreadText";
-import ThemeLinkButton from "../ThemeLinkButton";
+import HeroPattern from "../../assets/hero_bg.gif";
 
 import {
   HeroContainer,
   Subtitle,
   SubtitleContainer,
   TextGroup,
-  ButtonGroup,
+  HeroBackground,
 } from "./styles";
 
 export default function Hero() {
@@ -24,6 +24,7 @@ export default function Hero() {
 
   return (
     <HeroContainer ref={ref}>
+      <HeroBackground src={HeroPattern} loading="lazy" />
       <Navbar primary={isPrimary} />
       <SubtitleContainer>
         <Subtitle>Desenvolvedor Frontend</Subtitle>

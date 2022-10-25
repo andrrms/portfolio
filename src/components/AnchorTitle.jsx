@@ -5,7 +5,7 @@ const AnchorPoint = styled.span`
   top: -70px;
 `;
 
-const title = (type) => styled[type]`
+const TitleH2 = styled.h2`
   position: relative;
 
   color: inherit;
@@ -18,13 +18,11 @@ const title = (type) => styled[type]`
   }
 `;
 
-export default function AnchorTitle({ children, anchor, component = "h2" }) {
-  const TitleComponent = title(component);
-
+export default function AnchorTitle({ children, anchor, tabIndex }) {
   return (
-    <TitleComponent>
+    <TitleH2 tabIndex={tabIndex}>
       <AnchorPoint id={anchor} />
       {children}
-    </TitleComponent>
+    </TitleH2>
   );
 }

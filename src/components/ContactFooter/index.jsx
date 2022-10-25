@@ -7,7 +7,7 @@ export default function ContactFooter() {
     <ContactFooterContainer>
       <ContentContainer>
         <AnchorTitle anchor="contact">Vamos conversar melhor?</AnchorTitle>
-        <p>Um formulário de contato muito lindo</p>
+        <p>Aqui vai ter um formulário de contato muito lindo</p>
       </ContentContainer>
     </ContactFooterContainer>
   );
