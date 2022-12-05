@@ -14,6 +14,9 @@ import WebpNodeImage from "../assets/node.webp";
 import WebpReactImage from "../assets/react.webp";
 import WebpHTMLImage from "../assets/html.webp";
 import WebpCSSImage from "../assets/css.webp";
+import WebpPythonImage from "../assets/python.webp";
+import WebpDjangoImage from "../assets/django.webp";
+import WebpExpressImage from "../assets/express.webp";
 
 export const SkillCriteria = {
   DONT_KNOW: "Não sei",
@@ -67,21 +70,21 @@ const skillsData = [
   {
     skillName: "Python",
     skillImages: [PythonImage],
-    skillWebpImages: [],
+    skillWebpImages: [WebpPythonImage],
     skillColor: "#4B8BBE",
     criteria: {},
   },
   {
     skillName: "Django",
     skillImages: [DjangoImage],
-    skillWebpImages: [],
+    skillWebpImages: [WebpDjangoImage],
     skillColor: "#074d19",
     criteria: {},
   },
   {
     skillName: "Express",
     skillImages: [ExpressImage],
-    skillWebpImages: [],
+    skillWebpImages: [WebpExpressImage],
     skillColor: "#575656",
     criteria: {},
   },
