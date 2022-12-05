@@ -17,6 +17,7 @@ export default function SkillMeter({
   name,
   color = "#000",
   darkMode = false,
+  hidePercentage = false,
 }) {
   const [figure, setFigure] = useState([]);
   const [webpFigure, setWebpFigure] = useState([]);
@@ -58,9 +59,12 @@ export default function SkillMeter({
   const skillPercentage = Math.floor(proportionCalc(100, max, value));
 
   return (
-    <SkillMeterContainer items={max}>
+    <SkillMeterContainer items={max} alignHorizontal={!!hidePercentage}>
       <MeterTitle>
-        <Percentage color={color}>{skillPercentage}%</Percentage> {name}
+        {!hidePercentage && (
+          <Percentage color={color}>{skillPercentage}%</Percentage>
+        )}{" "}
+        {name}
       </MeterTitle>
       <HiddenMeter value={value} max={max} aria-label={name} />
       <FigureRow>

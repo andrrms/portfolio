@@ -11,7 +11,18 @@ export const SkillMeterContainer = styled.li`
   height: fit-content;
   padding: 10px;
 
-  /* background-color: rgba(255, 255, 255, 0.4);
+  ${({ alignHorizontal }) =>
+    alignHorizontal &&
+    css`
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 20px;
+
+      ul {
+        width: fit-content;
+      }
+    `}/* background-color: rgba(255, 255, 255, 0.4);
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.2); */
 `;

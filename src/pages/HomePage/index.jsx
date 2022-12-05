@@ -74,7 +74,7 @@ export default function HomePage() {
                   webpPhotos={[WebpKid1Pic, WebpKid2Pic]}
                   alt="Fotos minhas de quando eu era criança. Na época eu tinha em torno de 9 anos, estou usando uma camisa branca de mangas amarelas, e de pé em frente ao computador. Meu cabelo na época era no formato de tigelinha."
                 >
-                  Olha eu criança
+                  Olha eu criança :)
                 </PolaroidGroup>
               </div>
             </TextGroup>

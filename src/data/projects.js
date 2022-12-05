@@ -19,7 +19,7 @@ const projects = [
     images: [],
     stack: [Stack.JAVASCRIPT, Stack.REACTJS],
     type: Type.FRONTEND,
-    url: "",
+    url: "www.nu-kenzie-rho.vercel.app", 
     repo: "",
   },
 ];

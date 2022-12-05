@@ -25,7 +25,7 @@ export default function Hero() {
   return (
     <HeroContainer ref={ref}>
       <HeroBackground src={HeroPattern} loading="lazy" />
-      <Navbar primary={isPrimary} />
+      {/* <Navbar primary={isPrimary} /> */}
       <SubtitleContainer>
         <Subtitle>Desenvolvedor Frontend</Subtitle>
       </SubtitleContainer>
