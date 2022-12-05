@@ -14,6 +14,14 @@ export const ContactFooterContainer = styled.footer`
   P {
     font-family: "Inter";
     font-size: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
+
+    &:first-of-type {
+      margin-top: 25px;
+    }
+
+    a {
+      color: #fff;
+    }
   }
 `;

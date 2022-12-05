@@ -18,27 +18,21 @@ import {
 
 export default function Hero() {
   const [isPrimary, setIsPrimary] = useState(true);
-  const [ref, inView, entry] = useInView({ threshold: 0.1 });
+  const [ref, inView] = useInView({ threshold: 0.1 });
 
   useEffect(() => setIsPrimary(inView), [, inView]);
 
   return (
     <HeroContainer ref={ref}>
       <HeroBackground src={HeroPattern} loading="lazy" />
-      {/* <Navbar primary={isPrimary} /> */}
+      <Navbar primary={isPrimary} hideMobile />
       <SubtitleContainer>
-        <Subtitle>Desenvolvedor Frontend</Subtitle>
+        <Subtitle>Desenvolvedor Full Stack</Subtitle>
       </SubtitleContainer>
       <TextGroup>
         <SpreadText text="André" />
         <SpreadText text="Silveira" reversedAnimation />
       </TextGroup>
-      {/* <ButtonGroup>
-        <ThemeLinkButton primary href="#contact">
-          Quero Contratar
-        </ThemeLinkButton>
-        <ThemeLinkButton href="#about">Saiba mais</ThemeLinkButton>
-      </ButtonGroup> */}
       <PolaroidStripes />
     </HeroContainer>
   );

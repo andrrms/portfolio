@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-const ThemeLinkButton = styled.button`
+const ThemeLinkButton = styled.a`
   border-radius: 100px;
 
   font-family: "IBM Plex Mono";
@@ -10,6 +10,10 @@ const ThemeLinkButton = styled.button`
   text-decoration: none;
 
   padding: 8px 10px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
   border: none;
   ${({ primary }) =>
@@ -24,11 +28,14 @@ const ThemeLinkButton = styled.button`
           color: var(--color-orange-500);
         `}
 
-  @media (min-width: 1024px) {
-    padding: 10px 30px;
+  ${({ small }) =>
+    small &&
+    css`
+      font-size: 1rem;
+      padding: 4px 6px;
 
-    font-size: 20px;
-  }
+      gap: 4px;
+    `}
 `;
 
 export default ThemeLinkButton;

@@ -9,7 +9,7 @@ import {
   SmoothAnchor,
 } from "./styles";
 
-export default function Navbar({ primary }) {
+export default function Navbar({ primary, hideMobile }) {
   const [isSmallVP, setIsSmallVP] = useState(0);
 
   useEffect(() => {
@@ -25,34 +25,37 @@ export default function Navbar({ primary }) {
   });
 
   return (
-    <NavbarContainer primary={primary}>
-      <NavbarContent>
-        {isSmallVP ? (
-          <>
-            <NavButton
-              onClick={() => alert("Clicado")}
-              aria-label="Menu lateral"
-            >
-              <FiMenu />
-            </NavButton>
-          </>
-        ) : (
-          <LinksList>
-            <li>
-              <SmoothAnchor href="#skills">Minhas skills</SmoothAnchor>
-            </li>
-            <li>
-              <SmoothAnchor href="#projects">Meus projetos</SmoothAnchor>
-            </li>
-            <li>
-              <SmoothAnchor href="#about">Sobre mim</SmoothAnchor>
-            </li>
-            <li>
-              <SmoothAnchor href="#contact">Contato</SmoothAnchor>
-            </li>
-          </LinksList>
-        )}
-      </NavbarContent>
-    </NavbarContainer>
+    !isSmallVP &&
+    hideMobile && (
+      <NavbarContainer primary={primary}>
+        <NavbarContent>
+          {isSmallVP ? (
+            <>
+              <NavButton
+                onClick={() => alert("Clicado")}
+                aria-label="Menu lateral"
+              >
+                <FiMenu />
+              </NavButton>
+            </>
+          ) : (
+            <LinksList>
+              <li>
+                <SmoothAnchor href="#about">Sobre mim</SmoothAnchor>
+              </li>
+              <li>
+                <SmoothAnchor href="#skills">Minhas skills</SmoothAnchor>
+              </li>
+              <li>
+                <SmoothAnchor href="#projects">Meus projetos</SmoothAnchor>
+              </li>
+              <li>
+                <SmoothAnchor href="#contact">Contato</SmoothAnchor>
+              </li>
+            </LinksList>
+          )}
+        </NavbarContent>
+      </NavbarContainer>
+    )
   );
 }

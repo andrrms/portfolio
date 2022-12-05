@@ -27,8 +27,6 @@ export default function PolaroidGroup({ photos, webpPhotos, children, alt }) {
     preventScrollOnSwipe: true,
   });
 
-  useEffect(() => console.log(animation), [animation]);
-
   function prevPhoto(skip = 1) {
     return photos.indexOf(photos.at(selectedPhoto - skip));
   }

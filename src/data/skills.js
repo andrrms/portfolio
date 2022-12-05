@@ -1,4 +1,19 @@
 import JsImage from "../assets/js.png";
+import TsImage from "../assets/ts.png";
+import NodeImage from "../assets/node.png";
+import ReactImage from "../assets/react.png";
+import HTMLImage from "../assets/html.png";
+import CSSImage from "../assets/css.png";
+import PythonImage from "../assets/python.png";
+import DjangoImage from "../assets/django.png";
+import ExpressImage from "../assets/express.png";
+
+import WebpJsImage from "../assets/js.webp";
+import WebpTsImage from "../assets/ts.webp";
+import WebpNodeImage from "../assets/node.webp";
+import WebpReactImage from "../assets/react.webp";
+import WebpHTMLImage from "../assets/html.webp";
+import WebpCSSImage from "../assets/css.webp";
 
 export const SkillCriteria = {
   DONT_KNOW: "Não sei",
@@ -10,46 +25,64 @@ const skillsData = [
   {
     skillName: "JavaScript",
     skillImages: [JsImage],
+    skillWebpImages: [WebpJsImage],
+    skillColor: "#a36f0a",
     criteria: {},
   },
   {
     skillName: "TypeScript",
-    skillImages: [JsImage],
+    skillImages: [TsImage],
+    skillWebpImages: [WebpTsImage],
+    skillColor: "#1155c2",
     criteria: {},
   },
   {
     skillName: "NodeJS",
-    skillImages: [JsImage],
+    skillImages: [NodeImage],
+    skillWebpImages: [WebpNodeImage],
+    skillColor: "#226b0c",
     criteria: {},
   },
   {
     skillName: "ReactJS",
-    skillImages: [JsImage],
+    skillImages: [ReactImage],
+    skillWebpImages: [WebpReactImage],
+    skillColor: "#16669c",
     criteria: {},
   },
   {
     skillName: "HTML5",
-    skillImages: [JsImage],
+    skillImages: [HTMLImage],
+    skillWebpImages: [WebpHTMLImage],
+    skillColor: "#9c4016",
     criteria: {},
   },
   {
     skillName: "CSS3",
-    skillImages: [JsImage],
+    skillImages: [CSSImage],
+    skillWebpImages: [WebpCSSImage],
+    skillColor: "#0d2b8f",
     criteria: {},
   },
   {
     skillName: "Python",
-    skillImages: [JsImage],
+    skillImages: [PythonImage],
+    skillWebpImages: [],
+    skillColor: "#4B8BBE",
     criteria: {},
   },
   {
     skillName: "Django",
-    skillImages: [JsImage],
+    skillImages: [DjangoImage],
+    skillWebpImages: [],
+    skillColor: "#074d19",
     criteria: {},
   },
   {
     skillName: "Express",
-    skillImages: [JsImage],
+    skillImages: [ExpressImage],
+    skillWebpImages: [],
+    skillColor: "#575656",
     criteria: {},
   },
 ];

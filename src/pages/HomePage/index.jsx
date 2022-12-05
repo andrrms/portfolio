@@ -13,6 +13,7 @@ import Kid2Pic from "../../assets/kid2.png";
 import WebpKid2Pic from "../../assets/kid2.webp";
 import { ModalContext } from "../../contexts/ModalProvider";
 import { HomePageContainer, ContentArea, TextGroup } from "./styles";
+import ProjectsList from "../../components/ProjectsList";
 
 export default function HomePage() {
   const { open } = useContext(ModalContext);
@@ -23,28 +24,6 @@ export default function HomePage() {
       <ContentArea>
         <ContentContainer>
           <article>
-            <TextGroup>
-              <AnchorTitle anchor="skills">Minhas hard-skills</AnchorTitle>
-              <p>
-                Todas as skills foram calculadas a partir de uma lista de
-                critérios específicos. Você pode selecionar qualquer uma das
-                habilidades para saber quais critérios são esses.
-              </p>
-              <SkillsList />
-              <h2>Minhas soft-skills</h2>
-              <p>Algumas soft-skills por aqui</p>
-            </TextGroup>
-            <TextGroup>
-              <AnchorTitle anchor="projects">Meus projetos</AnchorTitle>
-              <button onClick={() => open("project-info", { id: 1 })}>
-                Abrir modal de projeto
-              </button>
-              <ul>
-                <li>Algum projetinho</li>
-                <li>Algum outro projeto</li>
-                <li>Projeto super legal</li>
-              </ul>
-            </TextGroup>
             <TextGroup className="horizontalContent">
               <div>
                 <AnchorTitle anchor="about">Sobre mim</AnchorTitle>
@@ -77,6 +56,17 @@ export default function HomePage() {
                   Olha eu criança :)
                 </PolaroidGroup>
               </div>
+            </TextGroup>
+            <TextGroup>
+              <AnchorTitle anchor="skills">Minhas skills</AnchorTitle>
+              <SkillsList />
+            </TextGroup>
+            <TextGroup>
+              <AnchorTitle anchor="projects">Meus projetos</AnchorTitle>
+              {/* <button onClick={() => open("project-info", { id: 1 })}>
+                Abrir modal de projeto
+              </button> */}
+              <ProjectsList />
             </TextGroup>
           </article>
         </ContentContainer>

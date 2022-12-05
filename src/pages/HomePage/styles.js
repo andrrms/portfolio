@@ -43,10 +43,6 @@ export const ContentArea = styled.main`
 
     margin-top: 30px;
 
-    &:first-of-type {
-      margin-top: 0;
-    }
-
     strong {
       font-weight: 700;
     }
@@ -61,7 +57,8 @@ export const ContentArea = styled.main`
 
     margin-top: 50px;
 
-    &:first-of-type {
+    &:first-of-type,
+    & > p:first-of-type {
       margin-top: 0;
     }
 
