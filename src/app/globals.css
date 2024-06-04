@@ -48,3 +48,25 @@ body {
 .animate-expandable-text-appear {
   animation: expandable-text-appear 1s ease-in-out forwards;
 }
+
+.dashed-background {
+  background: linear-gradient(to bottom, transparent 50%, var(--color-slate-900) 50%), var(--color-slate-500);
+  background-size: 16px var(--dash-size, 10px), 100% 2px;
+}
+
+@keyframes disappear-menu {
+  0% {
+    @apply opacity-100;
+  }
+  99% {
+    @apply opacity-0;
+  }
+  100% {
+    @apply opacity-0;
+    @apply hidden;
+  }
+}
+
+.animate-disappear-menu {
+  animation: disappear-menu 0s forwards;
+}

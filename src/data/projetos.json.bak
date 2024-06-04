@@ -1,0 +1,42 @@
+{
+	"destaques": [{
+		"nome": "Projeto 1",
+		"description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, minima consequatur. Cumque animi praesentium ipsum quisquam at exercitationem eveniet voluptate, quidem reprehenderit sit, odit nobis doloribus veritatis modi! Recusandae, explicabo.",
+		"metricas": [
+			{
+				"titulo": "Lorem / mês",
+				"valor": "+ 1.3m"
+			},
+			{
+				"titulo": "Lorem / mês",
+				"valor": "+ 1.3m"
+			}
+		],
+		"url": "https://let-me-pay-front.vercel.app/",
+		"repo": "https://github.com/M4-Capstone",
+		"destaques": [
+			{
+				"titulo": "Página Inicial",
+				"src": ""
+			}
+		]
+	}],
+	"todos": [
+		{
+			"titulo": "Kenzie Academy",
+			"description": "Projetos que desenvolvi durante o curso",
+			"projetos": [
+				{
+					"nome": "LetMePay",
+					"description": "Simulador de plataforma financeira",
+					"url": "https://github.com/M4-Capstone"
+				},
+				{
+					"nome": "Calculadora de Antecipações",
+					"description": "Autodescritivo :p",
+					"url": "https://github.com/andrrms/calculadora-antecipacao"
+				}
+			]
+		}
+	]
+}

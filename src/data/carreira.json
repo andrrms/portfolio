@@ -1,0 +1,87 @@
+[
+	{
+		"nomeEmpresa": "Catálise Investimentos",
+		"nomeCargo": "Desenvolvedor de Software Pleno",
+		"inicio": "Abril de 2024",
+		"descricao": [
+			"Com essa promoção, assumi a liderança do time de melhoria contínua e anomalias, gerenciando os pedidos de melhoria, assim como implementando aprimoramentos de qualidade de vida no sistema, e também resolução de anomalias tanto para clientes internos quanto externos."
+		],
+		"tecnologias": [
+			"PHP",
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"Git",
+			"SQL",
+			"APIs",
+			"Docker",
+			"Jenkins",
+			"AWS Lambda",
+			"Microsserviços"
+		],
+		"competencias": [
+			"Lider técnico do time de Anomalias e Melhoria Contínua",
+			"Desenvolvimento de novas funcionalidades de acordo com necessidades dos clientes",
+			"Manutenção de sistemas e atendimento de chamados",
+			"Automatização processos internos através de plataformas como Jenkins, Pipefy e Workato",
+			"Criação de pipelines de deploy automatizado e entrega contínua para sistemas"
+		],
+		"tags": []
+	},
+	{
+		"nomeEmpresa": "Catálise Investimentos",
+		"nomeCargo": "Desenvolvedor de Software Júnior",
+		"inicio": "Maio de 2023",
+		"fim": "Abril de 2024",
+		"descricao": [
+			"Meu primeiro emprego, rapidamente me adaptei aos processos e necessidades do time, entregando propostas de melhorias e criando novas funcionalidades ao sistema."
+		],
+		"tecnologias": [
+			"PHP",
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"Git",
+			"SQL",
+			"APIs",
+			"Jenkins"
+		],
+		"competencias": [
+			"Desenvolvimento de novas funcionalidades e manutenção de sistemas",
+			"Resolução de anomalias técnicas e estabilidade operacional",
+			"Suporte para clientes, auxiliando em integrações com a API da empresa",
+			"Integração com APIs externas",
+			"Planejamento e execução de GMUDs nos sistemas"
+		],
+		"tags": []
+	},
+	{
+		"nomeEmpresa": "Kenzie Academy Brasil",
+		"nomeCargo": "Monitoria de Alunos",
+		"inicio": "Março de 2022",
+		"fim": "Julho de 2022",
+		"descricao": [
+			"Durante o tempo em que fiz bootcamp na Kenzie, me foi oferecido a oportunidade de fazer mentoria para alunos com dificuldades durante o curso."
+		],
+		"tecnologias": [
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"Padrões de Projeto",
+			"Scrum"
+		],
+		"competencias": [
+			"Contato ativo com os alunos",
+			"Correção das entregas e atividades",
+			"Assistência no canal de dúvidas",
+			"Relatório sobre os alunos",
+			"Aplicação de testes"
+		],
+		"tags": [
+			{
+				"text": "Freelance",
+				"class": "text-gray-400"
+			}
+		]
+	}
+]

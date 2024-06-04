@@ -1,0 +1,21 @@
+{
+	"destaques": [],
+	"todos": [
+		{
+			"titulo": "Kenzie Academy",
+			"description": "Projetos que desenvolvi durante o curso",
+			"projetos": [
+				{
+					"nome": "LetMePay",
+					"description": "Simulador de plataforma financeira",
+					"url": "https://github.com/M4-Capstone"
+				},
+				{
+					"nome": "Calculadora de Antecipações",
+					"description": "Autodescritivo :p",
+					"url": "https://github.com/andrrms/calculadora-antecipacao"
+				}
+			]
+		}
+	]
+}

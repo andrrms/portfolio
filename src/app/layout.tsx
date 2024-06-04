@@ -11,6 +11,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "André Silveira",
   description: "Portfolio de André Silveira",
+  metadataBase: new URL("https://www.asilveira.com.br/"),
+	openGraph: {
+		images: ['/og-image.jpg']
+	}
 };
 
 export default function RootLayout({
@@ -20,11 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <ClientRootLayoutWrapper>
-      <Analytics />
-      <SpeedInsights />
       <html lang="pt-BR">
         <body className={`${inter.className} bg-custom-blue-50 pt-4`}>
-          {/* <TopNavbar /> */}
+          <Analytics />
+          <SpeedInsights />
+          <TopNavbar />
           {children}
         </body>
       </html>
