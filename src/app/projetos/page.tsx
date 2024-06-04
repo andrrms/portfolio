@@ -7,16 +7,31 @@ export const metadata: Metadata = {
   description: "Projetos que eu desenvolvi",
 };
 
+interface Projetos {
+	nome: string;
+	description: string;
+	url?: string;
+	repo?: string;
+	metricas: {
+		titulo: string;
+		valor: string;
+	}[];
+}
+
 export default function Projetos() {
+	// Workaround, já que o TypeScript reclama se o meu
+	// JSON estático não tiver populado com os dados
+	const projetos = jsonProjetos.destaques as Projetos[];
+
 	return (
 		<main className="w-full max-w-2xl mx-auto p-4 text-md text-slate-300">
 			<h1 className="text-3xl font-bold text-slate-100 mt-3">Meus Projetos</h1>
-			{jsonProjetos.destaques.length > 0 && (
+			{projetos.length > 0 && (
 				<>
 					<p className="mt-2">Aqui estão alguns dos projetos que eu fiz, seja para uma prova de conceito ou para alguma necessidade pessoal.</p>
 
 					<ul className="flex flex-col gap-4 mt-4">
-						{jsonProjetos.destaques.map((projeto, i) => (
+						{projetos.length > 0 && projetos.map((projeto, i) => (
 							<>
 								<li key={i}>
 									<article className="flex flex-col gap-2 p-4 bg-slate-800 rounded-lg">
